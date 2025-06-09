@@ -1,0 +1,353 @@
+ /*----------------------header----------------------------*/
+header .titulo {
+  font-size: 45px !important;
+
+}   
+header nav div h5{
+  font-size: 30px;
+}
+/*-------------------------main----------------------------*/
+main {
+  padding-top: 90px;
+}
+
+/*------------------------body-------------------------------*/
+
+body{
+  background: linear-gradient(135deg, #494949, #acbac8);
+  
+}
+body h2 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+  margin-top: 150px;
+  color: white;
+
+}
+ body p {
+  font-size: 20px;
+}
+section div button{
+  background-color: #7a7878;
+}
+/*--------------------PRIMERA SECTION-----------------------------------*/
+.carousel div img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+.carousel div h5 {
+  font-size: 45px;
+}
+ /*---------------------clas documento nostros-----------------------*/
+.proposito{
+  font-size: 50px;
+}
+.futuro{
+  font-size: 50px;
+}
+.ubi{
+  font-size: 50px;
+  text-align: center;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+}
+.mapa div{
+  
+  width: 600px;
+  height: 450px;
+}
+.p-pro{
+  font-size: 20px;
+  color: rgb(11, 96, 92);
+}
+.p-fut{
+  font-size: 20px;
+  color: rgb(11, 96, 92);
+}
+/**-----------------class documento index--------------------------*/
+.ingresos h2 {
+  margin-top: 100px;
+}
+.ingresos div div{
+  margin: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #7a7878, #1a1a1a);
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 238, 238, 0.714);
+  transition: transform 0.8s, box-shadow 0.8s;
+}
+.ingresos div div :hover{
+   transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.ingresos  div img {
+  width: 100%;
+}
+.ingresos .ingresos-remeras{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ingresos .ingresos-camperas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ .ingresos div div button {
+    margin-top: auto;
+  }
+
+/*----------------------------------logo de whatsapp------------------------*/
+.logo-wsp{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;;
+}
+.logo-wsp a img
+{
+  width: 80px;
+}
+/*------------------------class documento remeras-------------------------*/
+.remeras div div{
+  margin: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #7a7878, #1a1a1a);
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 238, 238, 0.714);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.remeras div div :hover{
+   transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.remeras-div div img{
+  width: 100%;
+}
+.remeras-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.remeras-456{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.remeras-456 div img {
+  width: 100%;
+}
+
+/*--------------------------pie de pagina---------------------------------*/
+footer {
+  background-color: rgb(33, 33, 33);
+  text-align: center;
+  place-items: center;}
+footer h2 {
+  font-size: 50px;
+  color: white;
+}
+footer section h3 {
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  }
+footer section  ul a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+ 
+}
+footer section ul{
+  list-style: none;
+  
+}
+ footer div a  {
+  text-decoration: none; 
+}
+footer div h3 {
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  font-size: 30px;
+}  
+footer div a i{
+  font-size: 60px;
+  color: white;
+  transition: 1s;
+}
+footer div a i:hover{
+  color:rgba(0, 238, 238, 0.714) ;
+}
+
+
+
+/*------------------responsive body-----------------*/
+@media screen and (max-width:1200px){
+   .ingresos div div {
+   
+    height:350px;
+  }
+   .ingresos .ingresos-remeras {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+  }
+  .ingresos .ingresos-camperas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+   .ingresos div div {
+    
+    width: 300px;
+    height: 450px;
+  }
+  .remeras .remeras-div {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
+  }
+  .remeras .remeras-456 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width:850px){
+
+  .ingresos div div {
+   
+    height:350px;
+  }
+   .ingresos .ingresos-remeras {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+  }
+  .ingresos .ingresos-camperas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+   .ingresos div div {
+    width: 300px;
+    height: 450px;
+  }
+ 
+}
+@media screen and (max-width: 768px){
+  .carousel div img {
+    height: 350px;
+  }
+}
+@media screen and (max-width:745px){
+  body h2 {
+    font-size: 35px;
+  }
+  .ingresos div p {
+    font-size: 20px;
+  }
+  .ingresos .ingresos-remeras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ingresos .ingresos-camperas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ingresos div div {
+    width: 300px;
+    height: 450px;
+  }
+  .remeras .remeras-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .remeras .remeras-456 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .remeras div div {
+     width: 300px;
+    height: 450px;
+  }
+  .logo-wsp{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.logo-wsp a img
+{
+  width: 100%;
+}
+
+}
+@media screen and (max-width:450px){
+  .ingresos div div {
+    width: 200px;
+    height: 350px;
+  }
+  .remeras div div {
+    width: 200px;
+    height: 350px;
+  }
+}
+/* ---------------------responsive footer------------------------------ */
+@media screen and (max-width:770px){
+  footer{
+    height: 400px;
+  
+  }
+  footer h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width:607px){
+  footer{
+    height: 350px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+  footer div h3 {
+    font-size: 20px;
+  }
+  footer a  img {
+    width: 40px;
+
+  }
+
+}
