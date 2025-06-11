@@ -127,15 +127,15 @@ section div button{
 
 .carousel-title {
   
-  position: absolute;
-  top: 14%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  color: rgb(176, 164, 153); 
-  font-size: 65px; 
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  position: absolute !important;
+  top: 14% !important;
+  left: 30% !important;
+  transform: translate(-50%, -50%) !important;
+  color: rgb(176, 164, 153) !important; 
+  font-size: 65px !important; 
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
 }
 /*----------------------------------logo de whatsapp------------------------*/
 .logo-wsp{
