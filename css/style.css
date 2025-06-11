@@ -1,7 +1,7 @@
  /*----------------------header----------------------------*/
 header .titulo {
   font-size: 45px !important;
-
+color:white;
 }   
 header nav div h5{
   font-size: 30px;
@@ -14,7 +14,7 @@ main {
 /*------------------------body-------------------------------*/
 
 body{
-  background: linear-gradient(135deg, #494949, #acbac8);
+  background: linear-gradient(135deg, #ffffff, #acbac8);
   
 }
 body h2 {
@@ -31,49 +31,56 @@ body h2 {
 section div button{
   background-color: #7a7878;
 }
-/*--------------------PRIMERA SECTION-----------------------------------*/
-.carousel div img {
-  object-fit: cover;
-  width: 100%;
-  height: 600px;
-}
-.carousel div h5 {
-  font-size: 45px;
-}
+
+
  /*---------------------clas documento nostros-----------------------*/
-.proposito{
-  font-size: 50px;
+ .calidad{
+   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url("../img/carrusel\ 2.jpg");
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+ }
+ .calidad img {
+  width: 600px;
+  height: 800px;
 }
-.futuro{
-  font-size: 50px;
+.calidad div h2{
+  color: white;
 }
-.ubi{
-  font-size: 50px;
-  text-align: center;
+
+.calidad div p {
+  color: white;
 }
+
+
 
 .mapa {
   display: flex;
-  flex-direction: column; 
+  justify-content: space-between;
   align-items: center; 
   padding: 20px;
+  
+}
+.mapa h2{
+  color: black;
 }
 .mapa div{
   
   width: 600px;
   height: 450px;
 }
-.p-pro{
-  font-size: 20px;
-  color: rgb(11, 96, 92);
+.form h3{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.p-fut{
-  font-size: 20px;
-  color: rgb(11, 96, 92);
-}
+
+
 /**-----------------class documento index--------------------------*/
 .ingresos h2 {
   margin-top: 100px;
+  color: black;
 }
 .ingresos div div{
   margin: 30px;
@@ -109,7 +116,27 @@ section div button{
  .ingresos div div button {
     margin-top: auto;
   }
+  .carousel  img {
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+  
+  object-fit: cover;
+  filter: grayscale(40%); 
+}
 
+.carousel-title {
+  
+  position: absolute;
+  top: 14%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: rgb(176, 164, 153); 
+  font-size: 65px; 
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 /*----------------------------------logo de whatsapp------------------------*/
 .logo-wsp{
   width: 150px;
@@ -140,6 +167,9 @@ section div button{
    transform: translateY(-6px);
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
+.remeras h2{
+  color: black;
+}
 .remeras-div div img{
   width: 100%;
 }
@@ -156,7 +186,77 @@ section div button{
 .remeras-456 div img {
   width: 100%;
 }
-
+/*--------------------------class doc camperas----------------------------*/
+.camperas div div {
+  margin: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #7a7878, #1a1a1a);
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 238, 238, 0.714);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.camperas div div :hover{
+   transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.camperas h2{
+  color: black;
+}
+.camperas-div img {
+width: 100%;
+}
+.camperas-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.camperas-456 img {
+  width: 100%;
+}
+.camperas-456{
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*--------------------------class doc buzos-------------------------------*/
+.buzos div div {
+  margin: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #7a7878, #1a1a1a);
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 238, 238, 0.714);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.buzos div div :hover{
+     transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.buzos h2 {
+  color: black;
+}
+.buzos img {
+  width: 100%;
+}
+.buzos-div{
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buzos-456{
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /*--------------------------pie de pagina---------------------------------*/
 footer {
   background-color: rgb(33, 33, 33);
@@ -200,9 +300,25 @@ footer div a i:hover{
   color:rgba(0, 238, 238, 0.714) ;
 }
 
+@media screen and (max-width:405px){
+.ingresos h2{
+  margin: 5px;
+  padding: 20px;
+}
+}
 
 
-/*------------------responsive body-----------------*/
+/*-------------------responsive header------------------------*/
+@media screen and (max-width:745px){
+header .titulo{
+  font-size: 30px !important;
+}
+}
+
+
+
+
+/*------------------responsive doc index-----------------*/
 @media screen and (max-width:1200px){
    .ingresos div div {
    
@@ -223,17 +339,12 @@ footer div a i:hover{
     width: 300px;
     height: 450px;
   }
-  .remeras .remeras-div {
-    display: flex;
-   flex-wrap: wrap;
-    gap: 20px;
-  }
-  .remeras .remeras-456 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
 
+.carousel-title{
+   top: 20%;
+  left: 40%;
+  font-size: 30px;
+}
 }
 
 @media screen and (max-width:850px){
@@ -256,8 +367,17 @@ footer div a i:hover{
     width: 300px;
     height: 450px;
   }
- 
+   .calidad {
+    flex-direction: column;
+    text-align: center;
+  }
+
+   .calidad img {
+  width: 400px;
+  height: 500px;
 }
+}
+
 @media screen and (max-width: 768px){
   .carousel div img {
     height: 350px;
@@ -286,22 +406,7 @@ footer div a i:hover{
     width: 300px;
     height: 450px;
   }
-  .remeras .remeras-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .remeras .remeras-456 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .remeras div div {
-     width: 300px;
-    height: 450px;
-  }
+ 
   .logo-wsp{
   width: 50px;
   height: 50px;
@@ -320,7 +425,213 @@ footer div a i:hover{
     width: 200px;
     height: 350px;
   }
+  
+}
+@media screen and (max-width:405px){
+.ingresos h2{
+  margin: 5px;
+  padding: 20px;
+}
+}
+/*----------------------responsive logo wsp----------------------------*/
+@media screen and (max-width:745px){
+ .logo-wsp{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.logo-wsp a img
+{
+  width: 100%;
+}
+}
+/*-----------------------responsive doc nosotros-----------------------*/
+@media screen and (max-width:850px){
+   .calidad {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .calidad img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .calidad p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .mapa {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .mapa div {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:585px){
+  .mapa {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mapa iframe {
+  width: 350px;
+  height: 350px;
+}
+.form h3{
+  font-size: 30px;
+}
+}
+@media screen and (max-width: 400px) {
+  .calidad {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .calidad img {
+    width: 100%;
+    height: auto;
+  }
+
+  .calidad p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .mapa {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+ 
+/*----------------------responsive doc remeras-------------------------*/
+@media screen and (max-width:1200px){
+  .remeras .remeras-div {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
+  }
+  .remeras .remeras-456 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+  @media screen and (max-width:745px){
+ .remeras .remeras-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .remeras .remeras-456 {
+    display: flex;
+     flex-wrap: wrap;
+    gap: 20px
+  }
   .remeras div div {
+     width: 300px;
+    height: 450px;
+  }
+}
+  @media screen and (max-width:450px){
+   .remeras div div {
+    width: 200px;
+    height: 350px;
+  }
+}
+/*----------------------responsive doc camperas------------------------*/
+@media screen and (max-width:1200px){
+  .camperas .camperas-div{
+    display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
+  }
+  .camperas .camperas-456{
+    display: flex;
+     flex-wrap: wrap;
+     gap: 20px
+  }
+}
+@media screen and (max-width:745px){
+.camperas .camperas-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.camperas .camperas-456{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.camperas div div {
+   width: 300px;
+    height: 450px;
+}
+}
+ @media screen and (max-width:450px){
+  .camperas div div  {
+    width: 200px;
+    height: 350px;
+  }
+ }
+/*----------------------responsive doc buzos---------------------------*/
+@media screen and (max-width:1200px){
+  .buzos .buzos-div{
+     display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
+  }
+  .buzos .buzos-456{
+     display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
+  }
+ 
+}
+@media screen and (max-width:745px){
+  .buzos .buzos-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.buzos .buzos-456{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ .buzos div div{
+   width: 300px;
+    height: 450px;
+ }
+}
+@media screen and (max-width:450px){
+  .buzos div div{
     width: 200px;
     height: 350px;
   }
