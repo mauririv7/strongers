@@ -341,9 +341,9 @@ header .titulo{
   }
 
 .carousel-title{
-   top: 20%;
-  left: 40%;
-  font-size: 30px;
+   top: 20% !important;
+  left: 40% !important;
+  font-size: 30px !important;
 }
 }
 
@@ -425,7 +425,11 @@ header .titulo{
     width: 200px;
     height: 350px;
   }
-  
+   .carousel-title{
+    top: 20% !important;
+  left: 30% !important;
+  font-size: 20px !important;
+}
 }
 @media screen and (max-width:405px){
 .ingresos h2{
